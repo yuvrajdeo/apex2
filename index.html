@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate HTML, CSS & JavaScript Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Intermediate HTML, CSS, and JavaScript Made By Chandan kumar</h1>
+            <div class="timeline">TASK - 2 (Enhanced with Weather Widget)</div>
+            <p><strong>Objective:</strong> Enhance HTML and CSS skills, and learn JavaScript for DOM manipulation.</p>
+        </header>
+        <div class="task-grid">
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-number">1</div>
+                    <div class="task-title">Create a Contact Form Using HTML and CSS</div>
+                </div>
+                <div class="objective">
+                    <strong>Objective:</strong> Build forms with various input fields.<br>
+                    <strong>Actions:</strong> Create a form with input types like text, email, and submit buttons; style it with CSS.
+                </div>
+                <div class="form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error-message">Please enter your full name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                            <div class="error-message">Please enter a valid phone number</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message">Please select a subject</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Enter your message here..."></textarea>
+                            <div class="error-message">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-number">2</div>
+                    <div class="task-title">Add JavaScript Form Validation</div>
+                </div>
+                <div class="objective">
+                    <strong>Objective:</strong> Use JavaScript to ensure form data is valid.<br>
+                    <strong>Actions:</strong> Implement form validation that checks for required fields and correct email format.
+                </div>
+                <div class="form-container">
+                    <div style="background: #d4edda; padding: 15px; border-radius: 5px; border-left: 4px solid #155724;">
+                        <strong>✓ Form Validation Active!</strong><br>
+                        <ul style="margin-top: 10px; margin-left: 20px;">
+                            <li>Required field validation</li>
+                            <li>Email format validation</li>
+                            <li>Phone number format validation</li>
+                            <li>Real-time error feedback</li>
+                            <li>Form submission prevention on errors</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><em>Try submitting the form above with invalid data to see the validation in action!</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-number">3</div>
+                    <div class="task-title">Create a Responsive Layout Using Flexbox and CSS Grid</div>
+                </div>
+                <div class="objective">
+                    <strong>Objective:</strong> Build layouts that adapt to different screen sizes.<br>
+                    <strong>Actions:</strong> Structure a webpage using Flexbox for navigation and CSS Grid for content areas, and apply media queries for responsiveness.
+                </div>
+                <div class="layout-container">
+                    <div class="responsive-layout">
+                        <div class="layout-header">
+                            <h3>Header Section</h3>
+                            <p>CSS Grid Area: header</p>
+                        </div>
+                        <div class="layout-nav">
+                            <h4>Navigation</h4>
+                            <p>• Home</p>
+                            <p>• About</p>
+                            <p>• Services</p>
+                            <p>• Contact</p>
+                        </div>
+                        <div class="layout-content">
+                            <h4>Main Content</h4>
+                            <p>This responsive layout uses CSS Grid with named areas. It automatically adapts to mobile screens using media queries.</p>
+                        </div>
+                        <div class="layout-sidebar">
+                            <h4>Sidebar</h4>
+                            <p>Recent Posts</p>
+                            <p>Categories</p>
+                            <p>Tags</p>
+                        </div>
+                        <div class="layout-footer">
+                            <h3>Footer Section</h3>
+                            <p>© 2025 Responsive Layout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-number">4</div>
+                    <div class="task-title">Develop a Dynamic To-Do List or Image Gallery Using JavaScript</div>
+                </div>
+                <div class="objective">
+                    <strong>Objective:</strong> Learn DOM manipulation with JavaScript.<br>
+                    <strong>Actions:</strong> Create a to-do list or image gallery where users can add and remove tasks or images dynamically.
+                </div>
+                <div class="todo-container">
+                    <h4 style="margin-bottom: 15px; color: #2c3e50;">📝 Dynamic To-Do List</h4>
+                    <div class="todo-input-container">
+                        <input type="text" class="todo-input" id="todoInput" placeholder="Enter a new task...">
+                        <button class="add-btn" onclick="addTodo()">Add Task</button>
+                    </div>
+                    <ul class="todo-list" id="todoList">
+                        <li class="todo-item">
+                            <input type="checkbox" onchange="toggleTodo(this)">
+                            <span class="todo-text">Sample task - click checkbox to complete</span>
+                            <button class="delete-btn" onclick="deleteTodo(this)">Delete</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery-container">
+                    <h4 style="margin-bottom: 15px; color: #2c3e50;">🖼️ Dynamic Image Gallery</h4>
+                    <div class="gallery-controls">
+                        <input type="url" class="gallery-input" id="imageUrl" placeholder="Enter image URL...">
+                        <button class="add-btn" onclick="addImage()">Add Image</button>
+                    </div>
+                    <div class="gallery-grid" id="imageGallery">
+                        <div class="gallery-item">
+                            <img src="https://picsum.photos/200/150?random=1" alt="Sample Image">
+                            <button class="remove-image" onclick="removeImage(this)">×</button>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://picsum.photos/200/150?random=2" alt="Sample Image">
+                            <button class="remove-image" onclick="removeImage(this)">×</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="task-card">
+                <div class="task-header">
+                    <div class="task-number">5</div>
+                    <div class="task-title">Interactive Weather Widget with Animations</div>
+                </div>
+                <div class="objective">
+                    <strong>Objective:</strong> Create a weather widget with API integration and smooth animations.<br>
+                    <strong>Actions:</strong> Fetch weather data, display with animated elements, and provide user interaction.
+                </div>
+                <div class="weather-container">
+                    <div class="weather-widget" id="weatherWidget">
+                        <div class="weather-background-animation" id="weatherBackground"></div>
+                        <div class="weather-header">
+                            <div class="weather-location">
+                                <span>📍</span>
+                                <span id="locationName">Daltonganj, Jharkhand</span>
+                            </div>
+                            <button class="refresh-btn" onclick="refreshWeather()" id="refreshBtn">
+                                🔄
+                            </button>
+                        </div>
+                        <div id="weatherContent">
+                            <div class="weather-loading">
+                                <div class="loading-spinner"></div>
+                                <p>Loading weather data...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
